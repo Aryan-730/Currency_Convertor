@@ -1,6 +1,6 @@
 let Base_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
 
-const dropdowns = document.querySelectorAll(".dropdown select");
+const dropdowns = document.querySelectorAll(".option-select");
 
 for (let select of dropdowns) {
     for (let currencyCode in countries) {
