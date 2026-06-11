@@ -67,11 +67,12 @@ form {
 
 .dropdown {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 i{
-    margin-top : 6rem;
+    margin-top: 7rem;
     font-size: 1.5rem;
 }
 
@@ -107,7 +108,7 @@ i{
 
 .option-selector {
     display: flex;
-    justify-content: column;
+    flex-direction: column;
     margin: 1rem;
     border: 1px solid #776885;
     border-radius: 0.5rem;
@@ -116,4 +117,18 @@ i{
 
 .img-container {
     max-width: 2rem;
+}
+
+.img-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.countryName {
+    text-align: center;
+    margin: auto;
+    font-family: "Lobester";
+    color: #5f1a37;
+    font-size: 1.2rem;
 }
