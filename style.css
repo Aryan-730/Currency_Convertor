@@ -21,7 +21,7 @@ body {
     font-family: "Bree serif";
     text-align: center;
     font-size: 2.5rem;
-    margin : 1rem;
+    margin: 1rem;
 }
 
 .conatiner {
@@ -71,7 +71,7 @@ form {
     justify-content: space-between;
 }
 
-i{
+i {
     margin-top: 7rem;
     font-size: 1.5rem;
 }
