@@ -30,11 +30,11 @@ body {
     border-radius: 1rem;
     box-shadow: 0 0 1.5vmin rgba(0, 0, 0, 0.5);
     transition: transform 0.5 ease-in-out;
+    max-height: 80vw;
 }
 
 .conatiner:hover {
     box-shadow: 0 0 1.5vmin rgba(0, 0, 0, 0.7);
-    transform: scale(1.01);
 }
 
 form {
@@ -131,4 +131,88 @@ i{
     font-family: "Lobester";
     color: #5f1a37;
     font-size: 1.2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.resultbox{
+    background-color: #ffffff;
+    border: none;
+    min-height: 2rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    font-family: "Lobester";
+
+}
+
+.msg{
+    padding : 0.5rem;
+    margin-left: 1.2rem;
+    
+}
+
+@media (max-width: 768px) {
+    .conatiner {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .dropdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon i {
+        margin-top: 0;
+        margin: 1rem 0;
+        transform: rotate(90deg);  /* arrow points down on mobile */
+    }
+
+    .optional {
+        width: 100%;
+    }
+
+    .option-selector {
+        margin: 0.5rem auto;
+        width: 90%;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .conatiner {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .amount-input {
+        width: 60%;
+    }
+
+    .option-select {
+        font-size: 0.85rem;
+        padding: 0.3rem;
+    }
+
+    .countryName {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 80%;
+        padding: 0.5rem !important;
+    }
 }
