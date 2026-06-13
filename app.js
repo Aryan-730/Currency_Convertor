@@ -7,13 +7,14 @@ const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 const resultDiv = document.querySelector(".resultDiv");
 const amountInput = document.querySelector(".amount-input");
+const visitBtn = document.getElementById("website-btn");
 
 
 for (let select of dropdowns) {
     for (let currencyCode in countries) {
         let newOption = document.createElement("option");
-        newOption.innerText = countryNames[currencyCode];  
-        newOption.value = currencyCode;                    
+        newOption.innerText = countryNames[currencyCode];
+        newOption.value = currencyCode;
 
         if (select.name === "from" && currencyCode === "INR") {
             newOption.selected = "selected";
@@ -31,15 +32,15 @@ for (let select of dropdowns) {
 
 const updateFlag = (element) => {
     let currencyCode = element.value;
-    let countryCode  = countries[currencyCode];
+    let countryCode = countries[currencyCode];
     let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
 
-    let selector  = element.closest(".option-selector");
-    let img       = selector.querySelector("img");
+    let selector = element.closest(".option-selector");
+    let img = selector.querySelector("img");
     let nameLabel = selector.querySelector(".countryName");
 
     img.src = newSrc;
-    nameLabel.textContent = currencyCode;  
+    nameLabel.textContent = currencyCode;
 }
 
 
@@ -53,7 +54,7 @@ formBtn.addEventListener("click", async (evt) => {
         amount.value = "1";
     }
 
-    const URL = `${Base_URL}/${fromCurr.value.toLowerCase()}.json`; 
+    const URL = `${Base_URL}/${fromCurr.value.toLowerCase()}.json`;
     let response = await fetch(URL);
     let data = await response.json();
 
@@ -65,8 +66,13 @@ formBtn.addEventListener("click", async (evt) => {
     msg.innerText = `${amountVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 
     resultDiv.classList.remove("hide");
-}); 
+});
 
 amountInput.addEventListener("input", () => {
     resultDiv.classList.add("hide");
+});
+
+
+visitBtn.addEventListener("click", () => {
+    window.open("https://exchangebyaryan.niat.tech/");
 });
