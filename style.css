@@ -8,11 +8,11 @@
 }
 
 body {
-
+    
     background-color: #73eedc !important;
 }
 
-main {
+main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +33,7 @@ main {
     border-radius: 1rem;
     box-shadow: 0 0 1.5vmin rgba(0, 0, 0, 0.5);
     transition: transform 0.5 ease-in-out;
+    margin: 3rem;
 }
 
 .conatiner:hover {
@@ -73,7 +74,7 @@ form {
     justify-content: space-between;
 }
 
-.exchange-icon {
+.exchange-icon{
     margin-top: 7rem;
     font-size: 1.5rem;
 }
@@ -135,11 +136,11 @@ form {
     font-size: 1.2rem;
 }
 
-.hide {
+.hide{
     display: none;
 }
 
-.resultbox {
+.resultbox{
     background-color: #ffffff;
     border: none;
     min-height: 2rem;
@@ -149,10 +150,10 @@ form {
 
 }
 
-.msg {
-    padding: 0.5rem;
+.msg{
+    padding : 0.5rem;
     margin-left: 1.2rem;
-
+    
 }
 
 .footer-container {
@@ -162,7 +163,7 @@ form {
     color: white;
 }
 
-.link-icon {
+.link-icon{
     margin: 0px !important;
 }
 
@@ -180,8 +181,7 @@ form {
     .icon i {
         margin-top: 0;
         margin: 1rem 0;
-        transform: rotate(90deg);
-        /* arrow points down on mobile */
+        transform: rotate(90deg);  /* arrow points down on mobile */
     }
 
     .optional {
