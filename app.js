@@ -74,5 +74,5 @@ amountInput.addEventListener("input", () => {
 
 
 visitBtn.addEventListener("click", () => {
-    window.open("https://exchangebyaryan.niat.tech/");
+    window.open("https://aryankedar.niat.tech/");
 });
