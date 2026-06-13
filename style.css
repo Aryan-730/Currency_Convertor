@@ -8,12 +8,15 @@
 }
 
 body {
+
+    background-color: #73eedc !important;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #73eedc !important;
-
 }
 
 .main-heading {
@@ -70,7 +73,7 @@ form {
     justify-content: space-between;
 }
 
-i {
+.exchange-icon {
     margin-top: 7rem;
     font-size: 1.5rem;
 }
@@ -132,11 +135,11 @@ i {
     font-size: 1.2rem;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.resultbox{
+.resultbox {
     background-color: #ffffff;
     border: none;
     min-height: 2rem;
@@ -146,10 +149,21 @@ i {
 
 }
 
-.msg{
-    padding : 0.5rem;
+.msg {
+    padding: 0.5rem;
     margin-left: 1.2rem;
-    
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.link-icon {
+    margin: 0px !important;
 }
 
 @media (max-width: 768px) {
@@ -166,7 +180,8 @@ i {
     .icon i {
         margin-top: 0;
         margin: 1rem 0;
-        transform: rotate(90deg);  /* arrow points down on mobile */
+        transform: rotate(90deg);
+        /* arrow points down on mobile */
     }
 
     .optional {
