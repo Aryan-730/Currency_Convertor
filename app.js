@@ -74,5 +74,5 @@ amountInput.addEventListener("input", () => {
 
 
 visitBtn.addEventListener("click", () => {
-    window.open("https://aryankedar.niat.tech/");
+    window.open("https://portfolio-website-delta-ten-23.vercel.app/");
 });
